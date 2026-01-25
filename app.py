@@ -17,6 +17,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 mlflow.set_tracking_uri(tracking_uri)
+mlflow.set_experiment("Tesing2")
 
 # Enable autologging
 mlflow.sklearn.autolog()
