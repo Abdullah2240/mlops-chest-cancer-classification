@@ -1,2 +1,18 @@
+tensorflow==2.12.0
+gdown
+dvc
+notebook
+numpy
+matplotlib
+python-box==7.3.2w
+pyYAML
+tqdm
+ensure==1.0.4
+joblib
+types-pyYAML
+scipy
+Flask
+Flask-Cors
 mlflow==3.8.0
 dagshub
+-e .
