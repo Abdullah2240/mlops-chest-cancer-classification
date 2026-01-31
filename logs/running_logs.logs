@@ -1,1 +1,40 @@
 [2026-01-29 16:24:19,009: INFO: main: Welcome to the chestCancerClassifier]
+[2026-01-31 10:17:25,423: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-31 10:17:25,459: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-31 10:17:25,469: INFO: common: created directory at artifacts]
+[2026-01-31 10:17:37,775: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-31 10:17:37,783: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-31 10:17:37,792: INFO: common: created directory at artifacts]
+[2026-01-31 10:17:37,797: INFO: common: created directory at artifacts/data_ingestion]
+[2026-01-31 10:18:16,481: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-31 10:18:16,484: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-31 10:18:16,488: INFO: common: created directory at artifacts]
+[2026-01-31 10:18:50,122: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-31 10:18:50,130: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-31 10:18:50,135: INFO: common: created directory at artifacts]
+[2026-01-31 10:18:50,139: INFO: common: created directory at artifacts/data_ingestion]
+[2026-01-31 10:18:50,146: INFO: 3042008700: Downloading data from https://drive.google.com/file/d/1DJKJU5v_CrbX1A_4nOpNttBqZQaoJ0Yd/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-31 10:19:25,598: INFO: 3042008700: Downloaded data from https://drive.google.com/file/d/1DJKJU5v_CrbX1A_4nOpNttBqZQaoJ0Yd/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-31 10:41:06,730: INFO: main: >>>>>>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<<<<<]
+[2026-01-31 10:41:06,730: ERROR: main: DataIngestionPipeline.main() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "C:\Users\Hp\Code\mlops-chest-cancer-classification\main.py", line 10, in <module>
+    obj.main()
+TypeError: DataIngestionPipeline.main() missing 1 required positional argument: 'self'
+[2026-01-31 10:42:11,049: INFO: main: >>>>>>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<<<<<]
+[2026-01-31 10:42:11,049: ERROR: main: DataIngestionPipeline.main() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "C:\Users\Hp\Code\mlops-chest-cancer-classification\main.py", line 10, in <module>
+    obj.main()
+TypeError: DataIngestionPipeline.main() missing 1 required positional argument: 'self'
+[2026-01-31 10:42:22,259: INFO: main: >>>>>>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<<<<<]
+[2026-01-31 10:42:22,265: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-31 10:42:22,267: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-31 10:42:22,270: INFO: common: created directory at artifacts]
+[2026-01-31 10:42:22,270: INFO: common: created directory at artifacts/data_ingestion]
+[2026-01-31 10:42:22,270: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1DJKJU5v_CrbX1A_4nOpNttBqZQaoJ0Yd/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-31 10:42:56,266: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1DJKJU5v_CrbX1A_4nOpNttBqZQaoJ0Yd/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-31 10:42:58,566: INFO: main: >>>>>>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<<<<<
+
+x================x]
+[2026-01-31 10:55:52,045: INFO: log_test: test]

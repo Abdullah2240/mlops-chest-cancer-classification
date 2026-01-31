@@ -1,5 +1,6 @@
 import os
-from box import ConfigBox, BoxValueError
+from box.exceptions import BoxValueError
+from box import ConfigBox
 from chestCancerClassifier import logger
 import yaml
 import json
