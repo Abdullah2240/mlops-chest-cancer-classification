@@ -13,7 +13,7 @@ class EvaluationPipeline:
         evaluation_config = config.getEvaluationConfig()
         evaluation = Evaluation(config=evaluation_config)
         evaluation.evaluation()
-        evaluation.log_into_mlflow()
+        # evaluation.log_into_mlflow()
         
 
 if __name__ == "__main__":
