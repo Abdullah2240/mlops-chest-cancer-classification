@@ -62,8 +62,8 @@ class Evaluation:
         self._valid_generator()
         self.score = self.model.evaluate(self.valid_generator)
         self.save_score()
-        self.log_into_mlflow
-
+        # self.log_into_mlflow  # model is trained now, dont need to track
+ 
     def save_score(self):
         scores = {"loss": self.score[0], "accuracy": self.score[1]}
         save_json(path=Path("scores.json"), data=scores)

@@ -934,3 +934,247 @@ x================x]
 
 x======================x
 ]
+[2026-02-07 22:26:04,757: INFO: stage_02_prepare_base_model: **************************]
+[2026-02-07 22:26:04,757: INFO: stage_02_prepare_base_model: >>>>>>>>>>>>>>>> stage Prepare Base Model started <<<<<<<<<<<<<<<<]
+[2026-02-07 22:26:04,782: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-07 22:26:04,787: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-07 22:26:04,789: INFO: common: created directory at artifacts]
+[2026-02-07 22:26:04,790: INFO: common: created directory at artifacts/prepare_base_model]
+[2026-02-07 22:26:05,524: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-02-07 22:26:05,861: INFO: stage_02_prepare_base_model: >>>>>>>>>>>>>>>> stage Prepare Base Model completed <<<<<<<<<<<<<<<<
+
+x======================x
+]
+[2026-02-07 22:26:14,430: INFO: stage_03_model_trainer: **************************]
+[2026-02-07 22:26:14,430: INFO: stage_03_model_trainer: 
+
+>>>>>>>>>>>>>> stage Training started <<<<<<<<<<<<<<
+]
+[2026-02-07 22:26:14,437: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-07 22:26:14,439: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-07 22:26:14,440: INFO: common: created directory at artifacts]
+[2026-02-07 22:26:14,441: INFO: common: created directory at artifacts/training]
+[2026-02-07 22:30:25,046: INFO: stage_03_model_trainer: >>>>>>>>>>>>>> stage Training completed <<<<<<<<<<<<<<
+
+x================x]
+[2026-02-07 22:30:38,013: INFO: stage_04_model_evaluation: **************************]
+[2026-02-07 22:30:38,013: INFO: stage_04_model_evaluation: >>>>>>>>>>>>>>>> stage Evaluation started <<<<<<<<<<<<<<<<]
+[2026-02-07 22:30:38,031: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-07 22:30:38,031: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-07 22:30:38,031: INFO: common: created directory at artifacts]
+[2026-02-07 22:30:51,821: INFO: common: json file saved to scores.json]
+[2026-02-07 22:30:51,822: INFO: stage_04_model_evaluation: >>>>>>>>>>>>>>>> stage Evaluation completed <<<<<<<<<<<<<<<<
+
+x======================x
+]
+[2026-02-07 22:35:36,606: INFO: stage_04_model_evaluation: **************************]
+[2026-02-07 22:35:36,606: INFO: stage_04_model_evaluation: >>>>>>>>>>>>>>>> stage Evaluation started <<<<<<<<<<<<<<<<]
+[2026-02-07 22:35:36,606: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-07 22:35:36,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-07 22:35:36,606: INFO: common: created directory at artifacts]
+[2026-02-07 22:35:49,155: INFO: common: json file saved to scores.json]
+[2026-02-07 22:35:57,718: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-02-07 22:35:58,276: INFO: builder_impl: Assets written to: C:\Users\Hp\AppData\Local\Temp\tmpxbcdfzgx\model\data\model\assets]
+[2026-02-07 22:39:03,214: INFO: stage_04_model_evaluation: >>>>>>>>>>>>>>>> stage Evaluation completed <<<<<<<<<<<<<<<<
+
+x======================x
+]
+[2026-02-07 23:13:58,025: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:13:58,025: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:14:03,723: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:14:03] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:14:04,479: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:14:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2026-02-07 23:14:10,245: INFO: _internal: 172.16.132.43 - - [07/Feb/2026 23:14:10] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:14:11,172: INFO: _internal: 172.16.132.43 - - [07/Feb/2026 23:14:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2026-02-07 23:15:04,095: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:15:04,097: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:15:06,278: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:15:06] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:23:45,162: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:23:45] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:23:56,229: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:23:56,229: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:23:59,266: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:23:59] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:24:42,357: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+TypeError: cross_origin.<locals>.decorator() missing 1 required positional argument: 'f'
+[2026-02-07 23:24:42,376: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:24:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-02-07 23:27:46,548: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:27:46,548: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:27:48,159: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:27:48] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:27:57,745: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Hp\Code\mlops-chest-cancer-classification\app.py", line 34, in predictRoute
+    result = clApp.classifier.predict()
+  File "C:\Users\Hp\Code\mlops-chest-cancer-classification\src\chestCancerClassifier\pipeline\prediction.py", line 14, in predict
+    test_image = image.load_img(imagename, targetsize=(224, 224))
+TypeError: load_img() got an unexpected keyword argument 'targetsize'
+[2026-02-07 23:27:57,746: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:27:57] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-02-07 23:29:04,469: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:29:04,469: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:29:05,827: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:29:05] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:29:13,106: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\flask_cors\decorator.py", line 121, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\Hp\Code\mlops-chest-cancer-classification\app.py", line 34, in predictRoute
+    result = clApp.classifier.predict()
+  File "C:\Users\Hp\Code\mlops-chest-cancer-classification\src\chestCancerClassifier\pipeline\prediction.py", line 14, in predict
+    test_image = image.load_img(imagename, targetSize=(224, 224))
+TypeError: load_img() got an unexpected keyword argument 'targetSize'
+[2026-02-07 23:29:13,117: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:29:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2026-02-07 23:29:48,418: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:29:48,420: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:29:50,689: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:29:50] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:29:56,647: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:29:56] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:30:08,472: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:30:08] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:30:17,416: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:30:17] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:30:26,282: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:30:26] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:31:20,995: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000231410F6D40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2026-02-07 23:31:20,997: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:31:20] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:31:26,170: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000231410F7E20> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2026-02-07 23:31:26,173: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:31:26] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:31:32,937: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:31:32] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:37:42,390: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:37:42,390: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:37:48,943: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:37:48] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:37:55,486: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:37:55] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:37:58,916: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:37:58] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:38:05,330: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:38:05] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:38:15,387: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:38:15] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:38:26,614: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001852595AC20> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2026-02-07 23:38:26,618: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:38:26] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:38:30,191: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:38:30] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:38:40,189: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001852595BF40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2026-02-07 23:38:40,189: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:38:40] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:38:55,604: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:38:55,605: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:38:57,994: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:38:57] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:39:04,996: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:39:04] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:40:00,735: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:40:00] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:43:30,375: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-07 23:43:30,375: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-07 23:44:38,758: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:44:38] "GET / HTTP/1.1" 200 -]
+[2026-02-07 23:44:45,530: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:44:45] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:44:58,689: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:44:58] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:45:07,179: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:45:07] "POST /predict HTTP/1.1" 200 -]
+[2026-02-07 23:45:18,453: INFO: _internal: 127.0.0.1 - - [07/Feb/2026 23:45:18] "POST /predict HTTP/1.1" 200 -]
+[2026-02-08 00:00:25,721: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-08 00:00:25,721: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-08 00:01:06,018: INFO: _internal: 127.0.0.1 - - [08/Feb/2026 00:01:06] "GET / HTTP/1.1" 200 -]
+[2026-02-08 00:43:27,836: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.16.132.43:8080]
+[2026-02-08 00:43:27,836: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2026-02-08 00:43:29,855: INFO: _internal: 127.0.0.1 - - [08/Feb/2026 00:43:29] "GET / HTTP/1.1" 200 -]
+[2026-02-08 00:43:52,046: INFO: _internal: 127.0.0.1 - - [08/Feb/2026 00:43:52] "POST /predict HTTP/1.1" 200 -]
+[2026-02-08 00:44:02,299: INFO: _internal: 127.0.0.1 - - [08/Feb/2026 00:44:02] "POST /predict HTTP/1.1" 200 -]
+[2026-02-08 00:44:22,672: INFO: main: 
+
+>>>>>>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<<<<<
+]
+[2026-02-08 00:44:22,674: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-08 00:44:22,678: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-08 00:44:22,680: INFO: common: created directory at artifacts]
+[2026-02-08 00:44:22,681: INFO: common: created directory at artifacts/data_ingestion]
+[2026-02-08 00:44:22,681: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1TDIh_vNVAQdysD67si-BOsxsyrd3UKzG/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-02-08 00:45:37,391: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1TDIh_vNVAQdysD67si-BOsxsyrd3UKzG/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-02-08 00:45:38,086: INFO: main: >>>>>>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<<<<<
+
+x================x]
+[2026-02-08 00:45:38,086: INFO: main: **************************]
+[2026-02-08 00:45:38,086: INFO: main: >>>>>>>>>>>>>>>> stage Prepare Base Model started <<<<<<<<<<<<<<<<]
+[2026-02-08 00:45:38,086: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-08 00:45:38,086: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-08 00:45:38,086: INFO: common: created directory at artifacts]
+[2026-02-08 00:45:38,086: INFO: common: created directory at artifacts/prepare_base_model]
+[2026-02-08 00:45:38,786: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-02-08 00:45:39,102: INFO: main: >>>>>>>>>>>>>>>> stage Prepare Base Model completed <<<<<<<<<<<<<<<<
+
+x======================x
+]
+[2026-02-08 00:45:39,102: INFO: main: **************************]
+[2026-02-08 00:45:39,102: INFO: main: 
+
+>>>>>>>>>>>>>> stage Training started <<<<<<<<<<<<<<
+]
+[2026-02-08 00:45:39,102: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-08 00:45:39,102: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-08 00:45:39,102: INFO: common: created directory at artifacts]
+[2026-02-08 00:45:39,113: INFO: common: created directory at artifacts/training]
+[2026-02-08 00:49:24,120: INFO: main: >>>>>>>>>>>>>> stage Training completed <<<<<<<<<<<<<<
+
+x================x]
+[2026-02-08 00:49:24,121: INFO: main: **************************]
+[2026-02-08 00:49:24,121: INFO: main: >>>>>>>>>>>>>>>> stage Evaluation started <<<<<<<<<<<<<<<<]
+[2026-02-08 00:49:24,126: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-08 00:49:24,131: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-08 00:49:24,132: INFO: common: created directory at artifacts]
+[2026-02-08 00:49:37,255: INFO: common: json file saved to scores.json]
+[2026-02-08 00:49:46,464: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-02-08 00:49:47,471: INFO: builder_impl: Assets written to: C:\Users\Hp\AppData\Local\Temp\tmpt7i8ognm\model\data\model\assets]
+[2026-02-08 00:52:18,743: INFO: main: >>>>>>>>>>>>>>>> stage Evaluation completed <<<<<<<<<<<<<<<<
+
+x======================x
+]
+[2026-02-08 00:52:20,458: INFO: _internal: 127.0.0.1 - - [08/Feb/2026 00:52:20] "GET /train HTTP/1.1" 200 -]
