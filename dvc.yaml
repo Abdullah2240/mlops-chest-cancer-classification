@@ -22,9 +22,9 @@ stages:
       - artifacts/prepare_base_model
 
   model_trainer:
-    cmd: python src/chestCancerClassifier/pipeline/stage_03_model_training.py
+    cmd: python src/chestCancerClassifier/pipeline/stage_03_model_trainer.py
     deps:
-      - src/chestCancerClassifier/pipeline/stage_03_model_training.py
+      - src/chestCancerClassifier/pipeline/stage_03_model_trainer.py
       - config/config.yaml
       - artifacts/data_ingestion/Chest_CT_scan_Data
       - artifacts/prepare_base_model
@@ -36,19 +36,19 @@ stages:
     outs:
       - artifacts/training/model.h5
 
-model_evaluation:
-  cmd: python src/chestCancerClassifier/pipeline/stage_04_model_evaluation.py
-  deps:
-    - src/chestCancerClassifier/pipeline/stage_04_model_evaluation.py
-    - config/config.yaml
-    -  artifacts/data_ingestion/Chest_CT_scan_Data
-    - artifacts/training/model.h5
-  params:
-    - BATCH_SIZE
-    - IMAGE_SIZE
-  metrics:
-  - scores.json:
-      cache: false
+  model_evaluation:
+    cmd: python src/chestCancerClassifier/pipeline/stage_04_model_evaluation.py
+    deps:
+      - src/chestCancerClassifier/pipeline/stage_04_model_evaluation.py
+      - config/config.yaml
+      -  artifacts/data_ingestion/Chest_CT_scan_Data
+      - artifacts/training/model.h5
+    params:
+      - BATCH_SIZE
+      - IMAGE_SIZE
+    metrics:
+    - scores.json:
+        cache: false
 
 
 

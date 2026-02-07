@@ -888,3 +888,49 @@ Traceback (most recent call last):
   File "C:\Users\Hp\miniconda3\envs\cancer\lib\site-packages\requests\adapters.py", line 659, in send
     raise ConnectionError(err, request=request)
 requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2026-02-02 00:30:40,466: INFO: stage_01_data_ingestion: 
+
+>>>>>>>>>>>>>> stage Data Ingestion Stage started <<<<<<<<<<<<<<
+]
+[2026-02-02 00:30:40,466: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-02 00:30:40,466: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-02 00:30:40,479: INFO: common: created directory at artifacts]
+[2026-02-02 00:30:40,480: INFO: common: created directory at artifacts/data_ingestion]
+[2026-02-02 00:30:40,481: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1TDIh_vNVAQdysD67si-BOsxsyrd3UKzG/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-02-02 00:31:33,468: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1TDIh_vNVAQdysD67si-BOsxsyrd3UKzG/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-02-02 00:31:34,021: INFO: stage_01_data_ingestion: >>>>>>>>>>>>>> stage Data Ingestion Stage completed <<<<<<<<<<<<<<
+
+x================x]
+[2026-02-02 00:31:47,546: INFO: stage_02_prepare_base_model: **************************]
+[2026-02-02 00:31:47,546: INFO: stage_02_prepare_base_model: >>>>>>>>>>>>>>>> stage Prepare Base Model started <<<<<<<<<<<<<<<<]
+[2026-02-02 00:31:47,546: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-02 00:31:47,546: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-02 00:31:47,562: INFO: common: created directory at artifacts]
+[2026-02-02 00:31:47,562: INFO: common: created directory at artifacts/prepare_base_model]
+[2026-02-02 00:31:48,157: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-02-02 00:31:48,372: INFO: stage_02_prepare_base_model: >>>>>>>>>>>>>>>> stage Prepare Base Model completed <<<<<<<<<<<<<<<<
+
+x======================x
+]
+[2026-02-02 00:32:40,541: INFO: stage_03_model_trainer: **************************]
+[2026-02-02 00:32:40,541: INFO: stage_03_model_trainer: 
+
+>>>>>>>>>>>>>> stage Training started <<<<<<<<<<<<<<
+]
+[2026-02-02 00:32:40,543: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-02 00:32:40,545: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-02 00:32:40,546: INFO: common: created directory at artifacts]
+[2026-02-02 00:32:40,546: INFO: common: created directory at artifacts/training]
+[2026-02-02 00:36:50,904: INFO: stage_03_model_trainer: >>>>>>>>>>>>>> stage Training completed <<<<<<<<<<<<<<
+
+x================x]
+[2026-02-02 00:37:05,460: INFO: stage_04_model_evaluation: **************************]
+[2026-02-02 00:37:05,460: INFO: stage_04_model_evaluation: >>>>>>>>>>>>>>>> stage Evaluation started <<<<<<<<<<<<<<<<]
+[2026-02-02 00:37:05,476: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-02 00:37:05,481: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-02 00:37:05,483: INFO: common: created directory at artifacts]
+[2026-02-02 00:37:18,824: INFO: common: json file saved to scores.json]
+[2026-02-02 00:37:18,826: INFO: stage_04_model_evaluation: >>>>>>>>>>>>>>>> stage Evaluation completed <<<<<<<<<<<<<<<<
+
+x======================x
+]
