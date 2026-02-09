@@ -64,8 +64,8 @@ stages:
       size: 576
     - path: src/chestCancerClassifier/pipeline/stage_03_model_trainer.py
       hash: md5
-      md5: 821ff8481324e9a12eb7243179089948
-      size: 962
+      md5: 4b22abffc95ba301223fa98660e02edc
+      size: 1331
     params:
       params.yaml:
         AUGMENTATION: false
@@ -78,7 +78,7 @@ stages:
     outs:
     - path: artifacts/training/model.h5
       hash: md5
-      md5: 532c463a60cea37ff0baa5a459a21a66
+      md5: 56e49ed2e3e28631bcb0bc75608eae12
       size: 59337520
   model_evaluation:
     cmd: python src/chestCancerClassifier/pipeline/stage_04_model_evaluation.py
@@ -90,7 +90,7 @@ stages:
       nfiles: 369
     - path: artifacts/training/model.h5
       hash: md5
-      md5: 532c463a60cea37ff0baa5a459a21a66
+      md5: 56e49ed2e3e28631bcb0bc75608eae12
       size: 59337520
     - path: config/config.yaml
       hash: md5
@@ -110,5 +110,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: 088f4a0332b42935a7b0d43e33770382
+      md5: 0bb2b88bc8a11d95c22323a7db929d8c
       size: 74

@@ -1178,3 +1178,28 @@ x================x]
 x======================x
 ]
 [2026-02-08 00:52:20,458: INFO: _internal: 127.0.0.1 - - [08/Feb/2026 00:52:20] "GET /train HTTP/1.1" 200 -]
+[2026-02-09 21:57:07,400: INFO: stage_03_model_trainer: **************************]
+[2026-02-09 21:57:07,402: INFO: stage_03_model_trainer: 
+
+>>>>>>>>>>>>>> stage Training started <<<<<<<<<<<<<<
+]
+[2026-02-09 21:57:07,402: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-09 21:57:07,414: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-09 21:57:07,416: INFO: common: created directory at artifacts]
+[2026-02-09 21:57:07,418: INFO: common: created directory at artifacts/training]
+[2026-02-09 22:03:40,631: INFO: stage_03_model_trainer: Model copied to Model directory]
+[2026-02-09 22:03:40,631: INFO: stage_03_model_trainer: >>>>>>>>>>>>>> stage Training completed <<<<<<<<<<<<<<
+
+x================x]
+[2026-02-09 22:04:01,877: INFO: stage_04_model_evaluation: **************************]
+[2026-02-09 22:04:01,878: INFO: stage_04_model_evaluation: >>>>>>>>>>>>>>>> stage Evaluation started <<<<<<<<<<<<<<<<]
+[2026-02-09 22:04:01,880: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-02-09 22:04:01,884: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-02-09 22:04:01,885: INFO: common: created directory at artifacts]
+[2026-02-09 22:04:26,695: INFO: common: json file saved to scores.json]
+[2026-02-09 22:04:41,081: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-02-09 22:04:42,799: INFO: builder_impl: Assets written to: C:\Users\Hp\AppData\Local\Temp\tmpvt6s9e7c\model\data\model\assets]
+[2026-02-09 22:12:12,585: INFO: stage_04_model_evaluation: >>>>>>>>>>>>>>>> stage Evaluation completed <<<<<<<<<<<<<<<<
+
+x======================x
+]
