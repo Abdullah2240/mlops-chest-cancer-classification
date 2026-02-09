@@ -4,7 +4,7 @@ dvc
 notebook
 numpy
 matplotlib
-python-box==7.3.2w
+python-box==7.3.2
 pyYAML
 tqdm
 ensure==1.0.4
