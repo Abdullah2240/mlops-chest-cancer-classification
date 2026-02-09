@@ -32,6 +32,13 @@ jobs:
     outputs:
       image_uri: ${{ steps.build-image.outputs.image_uri }}
     steps:
+      - name: Install AWS CLI
+        run: |
+          if ! command -v aws &> /dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y awscli
+          fi
+          
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -49,7 +56,7 @@ jobs:
 
       - name: Login to Amazon ECR
         id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+        uses: aws-actions/amazon-ecr-login@v2
 
       - name: Build, tag and push image
         id: build-image
@@ -79,12 +86,17 @@ jobs:
 
       - name: Login to Amazon ECR
         id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
+        uses: aws-actions/amazon-ecr-login@v2
 
       - name: Pull latest Docker image
         run: |
-          echo "IMAGE_URI=${{ needs.build-and-push-ecr-image.outputs.image_uri }}"
-          docker pull ${{ needs.build-and-push-ecr-image.outputs.image_uri }}
+          IMAGE_URI="${{ needs.build-and-push-ecr-image.outputs.image_uri }}"
+          echo "IMAGE_URI=$IMAGE_URI"
+          if [ -z "$IMAGE_URI" ]; then
+            echo "::error::IMAGE_URI is empty. Check that the build-and-push-ecr-image job succeeded and ECR secrets are set."
+            exit 1
+          fi
+          docker pull "$IMAGE_URI"
 
       - name: Stop and remove existing container if running
         run: |
