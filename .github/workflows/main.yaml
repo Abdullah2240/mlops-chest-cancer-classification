@@ -24,9 +24,9 @@ jobs:
 
       - name: Run unit tests
         run: echo "Running unit tests"
-      
+
   build-and-push-ecr-image:
-    name: Continuous Delivery
+    name: Build & Push Docker Image to ECR
     needs: integration
     runs-on: ubuntu-latest
     outputs:
@@ -51,7 +51,7 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
-      - name: Build, tag and push image to Amazon ECR
+      - name: Build, tag and push image
         id: build-image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
@@ -60,37 +60,46 @@ jobs:
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          echo "::set-output name=image_uri::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          echo "image_uri=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_OUTPUT
 
-  Continuous-Deployment:
+  continuous-deployment:
+    name: Deploy Docker Container
     needs: build-and-push-ecr-image
     runs-on: self-hosted
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
-    
-      - name: Configure AWS credentials
+
+      - name: Configure AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
-        with: 
+        with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
-    
+
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
-      - name: Pull latest image
+      - name: Pull latest Docker image
         run: |
+          echo "IMAGE_URI=${{ needs.build-and-push-ecr-image.outputs.image_uri }}"
           docker pull ${{ needs.build-and-push-ecr-image.outputs.image_uri }}
 
-      - name: Run Docker Image to server users
+      - name: Stop and remove existing container if running
+        run: |
+          if [ "$(docker ps -q -f name=cnncls)" ]; then
+            docker stop cnncls
+            docker rm cnncls
+          fi
+
+      - name: Run Docker container
         run: |
           docker run -d -p 8080:8080 --name=cnncls \
             -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} \
             -e AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }} \
             ${{ needs.build-and-push-ecr-image.outputs.image_uri }}
 
-      - name: Clean previous images and containers
+      - name: Clean old images and containers
         run: |
           docker system prune -f
