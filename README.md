@@ -98,8 +98,7 @@ DVC
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: URI: 50719077469.dkr.ecr.us-east-1.amazonaws.com/chest 
-    obv the link doesnt work
+    - Save the URI: URI:
     
 
 	
