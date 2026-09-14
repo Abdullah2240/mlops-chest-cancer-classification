@@ -1,5 +1,28 @@
 # mlops-chest-cancer-classification
-End to end MLOps Chest Cancer Classification project using MLflow and DVC.
+
+End-to-end MLOps pipeline for chest-image classification. The classifier is the payload; the
+engineering focus is the delivery path around it — reproducible stages, versioned data and models,
+and a deployment that can be rebuilt from the repository state rather than reconstructed by hand.
+
+**Pipeline:** configuration → data ingestion → base model preparation → training → evaluation →
+deployment, each stage declared in `dvc.yaml`.
+
+**Stack:** MLflow for experiment tracking (hosted on DagsHub), DVC for data and model versioning,
+Docker for packaging, GitHub Actions for CI/CD, and AWS ECR + EC2 for deployment. The EC2 instance
+runs as a self-hosted GitHub Actions runner, so a push to `main` rebuilds the image, pushes it to
+ECR, and redeploys the container.
+
+## Running system
+
+Screenshots from the deployed application on EC2.
+
+| | |
+|---|---|
+| ![Main screen](mlops-proof/main%20screen%201.png) | ![Main screen, alternate view](mlops-proof/main%20screen%202.png) |
+| ![Image upload](mlops-proof/upload%20picture.png) | ![Prediction output](mlops-proof/results.png) |
+
+The deployed interface, the upload path, and a prediction returned by the served model. A screen
+recording of the full flow is kept outside the repository for size reasons.
 
 ## Workflows
 
